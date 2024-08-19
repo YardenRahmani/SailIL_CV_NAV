@@ -24,7 +24,7 @@ def object_detect():
     init_params.depth_mode = sl.DEPTH_MODE.PERFORMANCE  # Use PERFORMANCE depth mode
     init_params.coordinate_units = sl.UNIT.METER  # Use meter units (for depth measurements)
     init_params.camera_resolution = sl.RESOLUTION.HD720
-    init_params.camera_fps = freq  # Set fps at 30
+    init_params.camera_fps = freq  # Set fps at 10
 
     err = zed.open(init_params)
     if err != sl.ERROR_CODE.SUCCESS:
