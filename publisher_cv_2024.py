@@ -1,7 +1,5 @@
 import cv2
 import pyzed.sl as sl
-import math
-import numpy as np
 from ultralytics import YOLO
 from ultralytics.utils.plotting import Annotator
 import torch
@@ -13,7 +11,7 @@ freq = 10
 
 def object_detect():
     
-    model = YOLO('Detect2024.pt')  # load a custom model
+    model = YOLO('YardenAsaf.pt')  # load a custom model
 
     # Initialize the ROS node
     rospy.init_node('object_detect_node', anonymous=True)
